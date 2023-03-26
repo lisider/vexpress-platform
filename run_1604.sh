@@ -6,10 +6,10 @@
 # Version : 1.0
 #########################################################################
 #!/bin/bash
-qemu-system-arm \
+sudo qemu-system-arm \
     -M vexpress-a9 \
     -m 512M \
-    -kernel u-boot/u-boot \
+    -kernel ../u-boot/u-boot \
     -nographic \
     -net nic,vlan=0 -net tap,vlan=0,ifname=tap0 \
     #-S -s
